@@ -11,7 +11,10 @@ function App() {
     mutationFn: () => {
       return fetchResponse(chat);
     },
-    onSuccess: (data) => console.log(data)
+    onSuccess: (data) => 
+  //   setChat ((prev)=>[...prev, {sender:'ai', message:data.message
+  // .replace(/^\n\n/,'')}])
+     console.log(data)
   })
 
   const sendMessage = async (message) => {
